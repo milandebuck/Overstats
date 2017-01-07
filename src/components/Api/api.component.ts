@@ -12,7 +12,7 @@ import {ApiService} from "../../services/api.service";
     styles: [ require('./content/api.component.css') ]
 })
 export class ApiComponent implements OnInit{
-    api:string='http://localhost:8080/Api';
+    api:string='https://api-overstats.herokuapp.com/Api';
     public routes:Array<any>;
     register:FormGroup;
     registerInput;

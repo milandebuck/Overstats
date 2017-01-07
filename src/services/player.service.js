@@ -17,7 +17,7 @@ var PlayerService = (function () {
         this.http = http;
         this.extractService = extractService;
         this.cs = cs;
-        this.apiUrl = "http://localhost:8080/Api";
+        this.apiUrl = "https://api-overstats.herokuapp.com/Api";
     }
     PlayerService.prototype.getTop = function (start, end) {
         var headers = new http_1.Headers();

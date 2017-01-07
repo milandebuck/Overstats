@@ -16,7 +16,7 @@ var ApiComponent = (function () {
     function ApiComponent(ic, apiservice) {
         this.ic = ic;
         this.apiservice = apiservice;
-        this.api = 'http://localhost:8080/Api';
+        this.api = 'https://api-overstats.herokuapp.com/Api';
     }
     ApiComponent.prototype.ngOnInit = function () {
         this.registerInput = [

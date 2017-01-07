@@ -7,7 +7,7 @@ import { ExtractService } from './extract.service'
 import {CookieService} from "./cookie.service";
 @Injectable()
 export class PlayerService {
-    apiUrl:string="http://localhost:8080/Api";
+    apiUrl:string="https://api-overstats.herokuapp.com/Api";
     constructor(private http:Http,private extractService: ExtractService,private cs: CookieService) {
     }
 
