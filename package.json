@@ -7,7 +7,7 @@
     "lint": "tslint ./src/**/*.ts",
     "dev": "concurrently \"tsc -w\" \"webpack-dev-server  --config ./webpack/webpack.dev.js --hot --progress\"",
     "heroku-postinstall": "webpack -p  --config ./webpack/webpack.dev.js --progress",
-    "start": "webpack-dev-server  --config ./webpack/webpack.dev.js --hot --progress"
+    "start": "node server/server.js"
   },
   "keywords": [],
   "author": "",
