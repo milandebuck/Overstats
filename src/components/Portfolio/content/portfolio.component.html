@@ -1,0 +1,102 @@
+<div class="wrapper-portfolio">
+    <h2>Portfolio</h2>
+    <div class="bloc">
+        <h3>My MEAN-Stack project</h3>
+        <p>Below is the summary of this mean stack app I Build. I will explain the technologies and why I used them</p>
+    </div>
+
+    <div class="bloc">
+        <h3>MongoDB</h3>
+        <div class="bloc-content">
+            <h4>Why MongoDB?</h4>
+            <p>
+                The reason MongoDB was such a good candidate for this project is because it has a lot of data.
+                Separating this data and normalizing it into different tables would not only make things more complicated but also slow down the requests to the database.
+                Instead I thought it would be better to have all the data in BSON documents which I can easily access and convert to JSON using a library.
+            </p>
+            <h4>Mongoose</h4>
+            <p>To connect the Express Api to the database I used the Mongoose Library which uses models to create schemes for a doucment and has an ORM approach <span>See: Server/models</span></p>
+            <h4>the data</h4>
+            <p>
+                One of the biggest problems in this project was to get access to a lot of data to simulate the stats coming fro a real game.
+                to solve this problem I wrote a script that copied the data from an unofficial Overwatch API and restructured it so it would fit inside the MongoDB document schemes that I created.
+                <span>See: Server/dbfill.js</span>
+            </p>
+        </div>
+    </div>
+    <div class="bloc">
+        <h3>Express Api</h3>
+        <div class="bloc-content">
+            <h4>Why Node.js?</h4>
+            <p>
+                The reason Node.js is such a good candidate for an API is that it is very easy to write asynchronous calls + the fact that Javascript already uses JSON for objects.
+                These 2 things make Node.js the ideal candidate. Node.js is also very scalable and the requests remain idle when it is not used or waiting for I/O.
+            </p>
+            <h4>Why Express Framework</h4>
+            <p>
+                Express is an framework build on Node.js is because Express makes it very easy to create an REST-api.
+                It is also the biggest and longest maintained Node.js framework.
+            </p>
+            <h4>The API</h4>
+            <h5>The server</h5>
+            <p>
+                The beautiful thing about Node.js is that you can write a server in just 4 lines of code.
+                The server this application is using is a bit larger than 4lines of code but still a very compact server which can be easily run with the Node.js-CLI(NPM)
+                It also ues several middlewares to make things easier like bodyparser whic is responeible for easy access to the request-body on HTTP-requests.
+                <span>See Server/server.js</span>
+            </p>
+            <h5>Security</h5>
+            <p>
+                An important part of an api is security cause when you allow third-party applications to access the Api you need to enable CORS(Cross Origin Requests).
+                So for extra security I added Authentication to the API.
+                Which makes sure that the person/application who accesses the API is known to the provider of the API this evens enables you to log everything that happens on the API.
+                The authentication is done with JSON Web tokens. Everytime the user logs in he gets a token which can be used for a 24h period to access the API.
+                every time the user makes an API call the token must be one of the request headers or the requests get blocked by the middleware and a "no token provide" message is sent to the client.
+                All Accounts are also stored in the MongoDB database, passwords are encrypted with the BCrypt algorithm.
+                <span>See Server/functions/encrypt.js</span>
+            </p>
+            <h5>API requests</h5>
+            <p>
+                All API requests are configured in the apirouter.js file. They are all programmed so that they word as asynchronous as possible.
+                Most of the routes are secured by the JWT token middleware. All the request return data in JSON in a global format which has a msg,a succes value an ofcourse a data value.
+                Also the data is remodeled into an JSON object because it would be insecure to send all data from our database to the client.
+                <span>See Server/router/apirouter.js</span>
+            </p>
+        </div>
+    </div>
+    <div class="bloc">
+        <h3>Angular 2</h3>
+        <div class="bloc-content">
+            <h4>Webpack</h4>
+            <p>
+                Webpack is an module bundler which makes it easy to bundle all the different scripts (which are a lot with angular 2) to a single script which is included in the application.
+            </p>
+            <h4>Typescript</h4>
+            <p>
+                Angular 2 is the easiest when written in Typescript. Typescript is a superset of javascript that adds types to Javascript when compiled you get plain Javascript.
+            </p>
+            <h4>Angular2 components</h4>
+            <p>
+                The advantage of components is that every component has it task an does that task only creating a very lose-coupled architecture.
+                these  components can interact which each other as seen in the Compare page where the searchbar outputs events to the compare component
+                or in the Api components which passes FormGroups into each api-example.
+                When created and included as a declaration in app.module.ts the components can be called with a simple html selector
+                Some examples of components in this application:
+            </p>
+            <div>
+                <h5>Searchbar</h5>
+                <searchbar [redirect]="true"></searchbar>
+                <h5>Ladder distribuation</h5>
+                <ranking></ranking>
+            </div>
+            <h4>Angular2 Services</h4>
+            <p>
+                Services are like the logic layer in the Angular framework they can be usefull for a lot of things in our application they are mostly used to  make asynchronous requests to the API.
+                When the data is received it is send to the UI components which will receive it if they are subscirbed to that service.
+            </p>
+
+
+
+        </div>
+    </div>
+</div>

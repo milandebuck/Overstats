@@ -1,0 +1,24 @@
+.wrapper-ranking{
+    margin-top: 3rem;
+    background-color: white;
+    border:1px solid #c7c7c7;
+    border-left: 5px solid #588c01;
+    border-radius: 5px;
+}
+.wrapper-ranking h3 {
+    text-align: center;
+    color: #222222;
+    font-size: 4rem;
+}
+.loadingwrapper{
+    width: 100%;
+}
+.loadingwrapper loading-indicator{
+    margin-left: 50%;
+}
+.wrapper-chart{
+    width: 100%;
+}
+.wrapper-chart canvas{
+    height: 300px!important;
+}

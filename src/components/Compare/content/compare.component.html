@@ -1,0 +1,33 @@
+<div class="wrapper-compare">
+    <h2>Compare Players</h2>
+    <div class="wrapper-compare-search clearfix">
+        <div class="compare-bloc">
+            <h3>Player1</h3>
+            <searchbar [redirect]="false" (usersearch)="searchhero1($event)"></searchbar>
+            <div class="wrapper-compare-user" *ngIf="hero1">
+                <img src="{{hero1.avatar}}" alt="">
+                <h4>{{hero1.username}}</h4>
+            </div>
+        </div>
+        <div class="compare-bloc">
+            <h3>Player2</h3>
+            <searchbar [redirect]="false" (usersearch)="searchhero2($event)"></searchbar>
+            <div  class="wrapper-compare-user" *ngIf="hero2">
+                <img src="{{hero2.avatar}}" alt="">
+                <h4>{{hero2.username}}</h4>
+            </div>
+        </div>
+
+    </div>
+    <div class="wrapper-compare-values" *ngIf="hero1 && hero2">
+    <ul>
+        <li *ngFor="let item of items" class="row compare-item">
+            <h4>{{item.tag}}</h4>
+            <ul>
+                <li [ngClass]="item.hero1 > item.hero2? 'compare-winner' : ''">{{item.hero1}}</li>
+                <li [ngClass]="item.hero1 < item.hero2? 'compare-winner' : ''">{{item.hero2}}</li>
+            </ul>
+        </li>
+    </ul>
+</div>
+</div>

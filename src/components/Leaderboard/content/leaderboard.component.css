@@ -1,0 +1,55 @@
+.leaderbord{
+    display: block;
+    padding:2rem;
+}
+.leaderbord-player{
+    display: block;
+    width:100%;
+    background-color: white;
+    margin: 1rem 0 1rem 0;
+    border:1px solid #c7c7c7;
+    border-radius: 5px;
+    border-left: 5px solid crimson;
+
+}
+.leaderbord-player:hover{
+    background-color: #c8c8c8;
+    cursor: pointer;
+}
+.leaderbord-place{
+    display: inline-block;
+    color: #c7c7c7;
+    font-size: 2rem;
+    height: 100%;
+    text-align: center;
+    width: 6rem;
+}
+.leaderbord-avatar{
+    width :6rem;
+    height: 6rem;
+}
+.leaderbord-avatar + .leaderbord-info{
+    display: inline-block;
+}
+.leaderbord-info{
+    width :80%;
+}
+.leaderbord-name{
+    display: inline-block;
+    width: 50%;
+    margin:1rem;
+
+}
+.leaderbord-rank{
+    width: 40%;
+    display: inline-block;
+}
+.leaderbord-rank img{
+    width: 4rem;
+    height :4rem;
+}
+@media(max-width: 700px){
+    .leaderbord-avatar{
+        display: none;
+    }
+}

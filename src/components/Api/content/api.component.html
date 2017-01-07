@@ -1,0 +1,28 @@
+<div class="wrapper-api">
+    <h2>Api Documentation</h2>
+    <div class="wrapper-documentation">
+        <ul>
+            <li class="documentation-bloc">
+                <h3>Register for an Api account</h3>
+                <form (submit)="onSubmit()" [formGroup]="register">
+                    <div *ngFor="let input of registerInput" class="form-row" >
+                        <param-input [param]="input" [form]="register"></param-input>
+                    </div>
+                    <div class="form-row">
+                        <button class="button" type="submit" [disabled]="!register.valid || register.value.password !== register.value.confirmpass">Send request</button>
+                    </div>
+                </form>
+                <div *ngIf="msg" class="result">
+                    {{msg}}
+                </div>
+            </li>
+            <li class="documentation-bloc" *ngFor="let route of routes">
+                <api-example [apimodel]="route" [apiurl]="api"></api-example>
+            </li>
+        </ul>
+        
+    </div>
+    <div class="api-create-account">
+        
+    </div>
+</div>

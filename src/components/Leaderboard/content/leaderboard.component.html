@@ -1,0 +1,16 @@
+<div class="leaderbord" infinite-scroll [infiniteScrollDistance]="5" [infiniteScrollThrottle]="500" (scrolled)="onScroll()">
+    <ul>
+       <li class="leaderbord-player row" *ngFor="let player of players; let i = index" (click)="toProfile(player.username)">
+           <div class="leaderbord-place">#{{i +1}}</div>
+           <img class="leaderbord-avatar" src="{{player.avatar}}" alt="" onerror="this.src = 'https://blzgdapipro-a.akamaihd.net/game/unlocks/0x02500000000002F7.png'">
+           <div class="leaderbord-info">
+               <h3 class="leaderbord-name"> {{player.username}} lvl:{{player.level}}</h3>
+               <div class="leaderbord-rank"><img src="{{player.rating.rank_img}}" alt=""><span>{{player.rating.rank}}</span></div>
+
+           </div>
+
+
+       </li>
+        <li *ngIf="loading" >Loading...</li>
+    </ul>
+</div>

@@ -1,0 +1,165 @@
+.wrapper-profile{
+    width: 96rem;
+    margin: 0 auto;
+    margin-top: -15rem;
+
+
+}
+.profile-header{
+    width: 100%;
+
+}
+.profile-header > h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10rem;
+    font-size: 10rem;
+}
+
+.profile-header-box{
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    border-left: 5px solid #ffc70e;
+
+}
+.profile-header .profile-img{
+    width: 12rem;
+    margin-left: 1rem;
+    vertical-align: top;
+}
+.profile-img + h3{
+    display: inline-block;
+    font-size: 6rem;
+}
+.profile-name{
+    vertical-align: top;
+}
+.profile-rank {
+    padding-top: 2rem;
+    margin-left: 3rem;
+    display: inline-block;
+    width: 16rem;
+}
+.profile-rank  img{
+    width: 6rem;
+    height: 6rem;
+}
+.profile-rank >img + span{
+    display: inline-block;
+    font-size: 4rem;
+
+}
+.profile-rank h3{
+    color: #c7c7c7;
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-level{
+    float: right;
+    display: inline-block;
+    width: 30%;
+    font-size: 8rem;
+}
+.profile-level h3{
+    font-size: 6rem;
+}
+.profile-body{
+    width: 100%;
+}
+.profile-overall{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    border-left: 5px solid #ffc70e;
+}
+.profile-body h3{
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+}
+.profile-overall > h4{
+    width: 100%;
+    font-size: 3rem;
+    text-align: center;
+    color: #c7c7c7;
+}
+
+.profile-body ul{
+    width: 100%;
+    list-style: none;
+    display: block;
+}
+.profile-overall ul:nth-child(odd){
+    background-color: #c7c7c7;
+}
+.profile-overall li{
+    width: 20%;
+    height: 10rem;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    font-size: 2rem;
+    background-color: white;
+    border: 1px solid #c7c7c7;
+}
+
+.profile-heroes{
+    width: 100%;
+}
+.profile-heroes > h3{
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    border-left: 5px solid #588c01;
+}
+
+.profile-hero{
+    margin-top: 1rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #c7c7c7;
+    border-left: 5px solid #588c01;
+}
+
+.profile-hero img{
+    width: 9rem;
+    float: left;
+}
+.profile-hero h4{
+    float: left;
+    font-size: 5rem;
+    text-align: left;
+    width: 40%;
+    padding-left: 20%;
+}
+.profile-hero span{
+    float: right;
+    font-size: 5rem;
+    font-family: "Overwatch";
+    padding-right: 10rem;
+}
+
+@media(max-width: 960px) {
+    .wrapper-profile{
+        width: 100%;
+        padding: 3%;
+    }
+
+}
+@media(max-width: 700px) {
+    .profile-overall li{
+        width: 100%;
+    }
+}
+
+
+

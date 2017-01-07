@@ -1,0 +1,90 @@
+﻿@font-face {
+	font-family: "Overwatch";
+	src: url("../fonts/bignoodletoo.ttf")	;
+}
+
+/* ===========================================
+   Custom reset
+   =========================================== */
+
+html {
+	font-size: 0.625em !important;
+	font-family: 'Roboto',sans-serif !important;
+
+}
+body{
+	background-color: #eee;
+}
+* {
+	z-index: 0;
+	margin: 0;
+	padding: 0; 
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+fieldset {
+	border: 0;
+}
+
+h1,h2,h3,h4{
+	font-family: "Overwatch";
+	text-align: center;
+}
+h2{
+	color: #ffc70e !important;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none !important;
+}
+a:hover{
+	color:#ffc70e !important;
+}
+
+.button{
+	color: #222222;
+	background-color: #ffc70e;
+	border: none;
+	padding: 1rem;
+	margin:1rem 1rem 1rem 2rem;
+	font-size: 2rem;
+	font-family: "Overwatch";
+	border-radius: 5px;
+}
+.button:hover{
+	color: white;
+}
+/* ===========================================
+   Helpers
+   =========================================== */
+
+.structural {
+	position: absolute;
+	left: -9999px;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.ir {
+	display: block;
+	background-size: 100%; 
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.hidden {
+	position: absolute !important;
+	visibility: hidden !important;
+	z-index: -1 !important;
+}

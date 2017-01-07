@@ -1,0 +1,19 @@
+<div [ngSwitch]="loading" class="wrapper-ranking">
+    <h3>Rank Distribution</h3>
+    <div *ngSwitchCase="false" class="clearfix">
+        <div class="wrapper-chart">
+            <canvas baseChart
+                    [datasets]="barChartData"
+                    [options]="barChartOptions"
+                    [chartType]="barChartType"
+                    [legend]="barChartLegend"
+                    [labels]="barChartLabels"
+                    [colors]="chartColors"
+            >
+            </canvas>
+        </div>
+    </div>
+    <div *ngSwitchCase="true" class="loadingwrapper">
+        <loading-indicator></loading-indicator>
+    </div>
+</div>

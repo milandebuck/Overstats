@@ -1,0 +1,8 @@
+<div [formGroup]="form">
+    <label *ngIf="param.type !== 'hidden'" [attr.for]="param.key">{{param.label}}</label>
+    <input [type]="param.type" [formControlName]="param.key" [id]="param.key" >
+    <div  *ngIf="param.type !== 'hidden'">
+        <div class="errorMessage" *ngIf="!isValid">{{param.label}} is required</div>
+    </div>
+
+</div>

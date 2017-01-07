@@ -1,0 +1,16 @@
+label{
+    width: 30%;
+    display: block;
+    font-size: 2rem;
+    border-bottom: 1px solid #ffc70e;
+}
+input{
+    font-size: 2rem;
+    padding: 1rem;
+    padding-left: 3rem;
+    display: block;
+    border: 1px solid #c7c7c7;
+    width: 50%;
+    background-color: #c7c7c7;
+    border-radius: 5px;
+}

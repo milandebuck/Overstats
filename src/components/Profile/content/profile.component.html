@@ -1,0 +1,129 @@
+<div class="wrapper-profile">
+    <div [ngSwitch]="loading" >
+        <div *ngSwitchCase="false" class="clearfix">
+            <div *ngIf="player">
+                <header class="profile-header">
+                    <h2>Profile</h2>
+                    <div class="profile-header-box">
+                        <img class="profile-img" src="{{player.avatar}}" alt="" onerror="this.src = 'https://blzgdapipro-a.akamaihd.net/game/unlocks/0x02500000000002F7.png'" >
+                        <h3  class="profile-name">{{player.username}}</h3>
+                        <div class="profile-rank" *ngIf="player.rating.rank">
+                            <img  src="{{player.rating.rank_img}}" alt="">
+                            <span>{{player.rating.rank}}</span>
+                            <h3>Skill Rating</h3>
+                        </div>
+                        <div class="profile-level">
+                                <h3>lvl: {{player.level}}</h3>
+                        </div>
+                    </div>
+
+                </header>
+                <section class="profile-body clearfix">
+                    <div class="profile-overall clearfix">
+                        <h3>Overall stats</h3>
+                        <h4>Avarage/Game</h4>
+                        <ul>
+                            <li>
+                                <h4>Eliminations</h4>
+                                {{player.stats['Eliminations-Average']}}
+                            </li>
+                            <li>
+                                <h4>Solo Kills</h4>
+                                {{player.stats['SoloKills-Average']}}
+                            </li>
+                            <li>
+                                <h4>K/D ratio</h4>
+                                {{kd}}
+                            </li>
+                            <li>
+                                <h4>Damage Done</h4>
+                                {{player.stats['DamageDone-Average']}}
+                            </li>
+                            <li>
+                                <h4>Healing</h4>
+                                {{player.stats['HealingDone-Average']}}
+                            </li>
+                        </ul>
+                        <h4>Lifetime Stats</h4>
+                        <ul>
+                            <li>
+                                <h4>Eliminations</h4>
+                                {{player.stats['Eliminations']}}
+                            </li>
+                            <li>
+                                <h4>Solo Kills</h4>
+                                {{player.stats['SoloKills']}}
+                            </li>
+                            <li>
+                                <h4>Objective kills</h4>
+                                {{player.stats['ObjectiveKills']}}
+                            </li>
+                            <li>
+                                <h4>Damage Done</h4>
+                                {{player.stats['DamageDone']}}
+                            </li>
+                            <li>
+                                <h4>Final Blows</h4>
+                                {{player.stats['TimePlayed']}}
+                            </li>
+                            <li>
+                                <h4>Healing</h4>
+                                {{player.stats['HealingDone']}}
+                            </li>
+                            <li>
+                                <h4>Time Played</h4>
+                                {{player.stats['TimePlayed']}}
+                            </li>
+                            <li>
+                                <h4>Time Spent on fire</h4>
+                                {{player.stats['TimeSpentonFire']}}
+                            </li>
+                            <li>
+                                <h4>Objective Time</h4>
+                                {{player.stats['ObjectiveTime']}}
+                            </li>
+                            <li>
+                                <h4>Medals</h4>
+                                {{player.stats['Medals']}}
+                            </li>
+                            <li>
+                                <h4>Deaths</h4>
+                                {{player.stats['Deaths']}}
+                            </li>
+                            <li>
+                                <h4>Multikills</h4>
+                                {{player.stats['Multikills']}}
+                            </li>
+                            <li>
+                                <h4>Highest Multikill</h4>
+                                {{player.stats['Multikill-Best']}}
+                            </li>
+                            <li>
+                                <h4>Melee kills</h4>
+                                {{player.stats['MeleeFinalBlows']}}
+                            </li>
+                            <li>
+                                <h4>Games Won</h4>
+                                {{player.stats['GamesWon']}}
+                            </li>
+                        </ul>
+                        <button class="button" (click)="compareTo()">compare</button>
+                    </div>
+                    <div class="profile-heroes">
+                        <h3>Playtime in Competitive</h3>
+                        <ul>
+                            <li *ngFor="let hero of player.heroes" class="profile-hero clearfix">
+                                <img class="profile-hero-portrait" src="{{hero.image}}" alt="">
+                                <h4 [innerHTML]="hero.name"></h4>
+                                <span>Time played: {{hero.playtime}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div *ngSwitchCase="true" class="loadingwrapper">
+            <loading-indicator></loading-indicator>
+        </div>
+    </div>
+</div>

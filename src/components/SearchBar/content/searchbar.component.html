@@ -1,0 +1,22 @@
+<div class="wrapper-searchbar clearfix">
+    <div class="wrapper-search clearfix">
+        <input type="text" placeholder="Search a player" (keyup)="search()" [(ngModel)] = query >
+        <span class="glyphicon glyphicon-search"></span>
+    </div>
+    <div [ngSwitch]="loading" class="wrapper-result">
+        <div *ngSwitchCase="false">
+            <div class="results" *ngIf="players">
+                <ul>
+                    <li *ngFor="let player of players" class="searchbar-player" (click)="profile(player.username)">
+                        <img src="{{player.avatar}}" alt="" onerror="this.src = 'https://blzgdapipro-a.akamaihd.net/game/unlocks/0x02500000000002F7.png'">
+                        {{player.username}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div *ngSwitchCase="true">
+            loading...
+        </div>
+    </div>
+
+</div>

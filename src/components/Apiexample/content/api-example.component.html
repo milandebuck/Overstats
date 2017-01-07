@@ -1,0 +1,33 @@
+<div class="wrapper-api-example">
+    <h3>{{apimodel.name}}</h3>
+    <a href="#">{{apiurl}}{{apimodel.urlexample}}</a>
+    <p>{{apimodel.desc}}</p>
+    <div class="wrapper-params">
+        <h4>parameters</h4>
+        <ul>
+            <li *ngFor="let param of apimodel.params">
+                <h5>{{param.key}}</h5>
+                <p>{{param.desc}}</p>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper-try">
+        <h4>try it</h4>
+        <div class="wrapper-try-params">
+            <form (submit)="onSubmit()" [formGroup]="form">
+                <div *ngFor="let param of apimodel.params" class="form-row" >
+                    <param-input [param]="param" [form]="form"></param-input>
+                </div>
+                <div class="form-row">
+                    <button class="button" type="submit" [disabled]="!form.valid">Send request</button>
+                </div>
+            </form>
+        </div>
+        <div>
+            <h5>Result</h5>
+            <pre class="code" [innerHTML]="result | json">
+            </pre>
+        </div>
+
+    </div>
+</div>
