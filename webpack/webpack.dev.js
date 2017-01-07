@@ -12,7 +12,7 @@ module.exports = {
     watch:true,
     devServer: {
         contentBase: path.resolve(rootDir, 'dist'),
-        port: 9000
+        port:  process.env.PORT || 9000
     },
     devtool: 'source-map',
     entry: {
