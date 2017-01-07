@@ -6,7 +6,8 @@
   "scripts": {
     "lint": "tslint ./src/**/*.ts",
     "dev": "concurrently \"tsc -w\" \"webpack-dev-server  --config ./webpack/webpack.dev.js --hot --progress\"",
-    "heroku-postbuild": "webpack -p --config ./webpack/webpack.prod.js ",
+    "postinstall": "webpack -p --config ./webpack/webpack.prod.js ",
+    "build": "webpack -p --config ./webpack/webpack.prod.js",
     "start": "node server/server.js"
   },
   "keywords": [],
