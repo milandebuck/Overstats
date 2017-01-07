@@ -11,7 +11,7 @@ import {ApiService} from "../../services/api.service";
     styles: [ require('./content/app.component.css') ]
 })
 export class AppComponent implements OnInit{
-    public apiurl:string='http://localhost:8080/Api';
+    public apiurl:string='https://api-overstats.herokuapp.com/Api';
     constructor(private router: Router,private cs: CookieService,private api:ApiService){}
 
     ngOnInit(){
