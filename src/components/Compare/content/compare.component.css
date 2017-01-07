@@ -70,6 +70,12 @@ searchbar{
 .compare-winner{
     color: #588c01;
 }
+.msg{
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+    color: white;
+    font-size: 10rem;
+}
 
 @media(max-width: 960px) {
     .wrapper-compare{

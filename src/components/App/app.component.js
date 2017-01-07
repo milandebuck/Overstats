@@ -18,7 +18,7 @@ var AppComponent = (function () {
         this.router = router;
         this.cs = cs;
         this.api = api;
-        this.apiurl = 'http://localhost:8080/Api';
+        this.apiurl = 'https://api-overstats.herokuapp.com/Api';
     }
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;

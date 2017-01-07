@@ -20,14 +20,17 @@
 
     </div>
     <div class="wrapper-compare-values" *ngIf="hero1 && hero2">
-    <ul>
-        <li *ngFor="let item of items" class="row compare-item">
-            <h4>{{item.tag}}</h4>
-            <ul>
-                <li [ngClass]="item.hero1 > item.hero2? 'compare-winner' : ''">{{item.hero1}}</li>
-                <li [ngClass]="item.hero1 < item.hero2? 'compare-winner' : ''">{{item.hero2}}</li>
-            </ul>
-        </li>
-    </ul>
-</div>
+        <ul>
+            <li *ngFor="let item of items" class="row compare-item">
+                <h4>{{item.tag}}</h4>
+                <ul>
+                    <li [ngClass]="item.hero1 > item.hero2? 'compare-winner' : ''">{{item.hero1}}</li>
+                    <li [ngClass]="item.hero1 < item.hero2? 'compare-winner' : ''">{{item.hero2}}</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="wrapper-compare-values" *ngIf="!(hero1 && hero2)">
+        <h4 class="msg">Select 2 Players to compare</h4>
+    </div>
 </div>
