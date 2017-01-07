@@ -6,9 +6,7 @@
   "scripts": {
     "lint": "tslint ./src/**/*.ts",
     "dev": "concurrently \"tsc -w\" \"webpack-dev-server  --config ./webpack/webpack.dev.js --hot --progress\"",
-    "heroku-prebuild": "npm install -g http-server",
-    "heroku-postbuild": "ng build --prod",
-    "start": "http-server dist/",
+    "heroku-postinstall": "webpack -p  --config ./webpack/webpack.test.js --progress",
     "test": "karma start ./karma/karma.conf.js",
     "test:headless": "karma start ./karma/karma.conf.js --browsers PhantomJS --autoWatch=true --singleRun=false",
     "test:single": "karma start ./karma/karma.conf.js --browsers PhantomJS"
