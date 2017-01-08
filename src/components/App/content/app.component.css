@@ -102,6 +102,9 @@ footer a{
         width: 48%;
         text-align: center;
     }
+    .desktop li > a{
+        text-align: center;
+    }
     .search{
         padding: 1rem;
         width: 100%;

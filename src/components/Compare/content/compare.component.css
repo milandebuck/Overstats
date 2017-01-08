@@ -93,7 +93,7 @@ searchbar{
         font-size: 5rem;
     }
     .msg{
-        font-size: 3rem;    
+        font-size: 3rem;
     }
 }
 @media(max-width: 700px)  {

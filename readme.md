@@ -18,13 +18,22 @@ $ npm install
 ```
 
 
-Then start it
+Then start it (development)
 
 ```sh 
 $ npm run dev
 ```
-
 Application can be found on localhost:3000
+
+To run the production build
+
+
+```sh 
+$ npm run build
+$ npm start
+```
+
+
 
 ### Collaborators
 - Milan De Buck

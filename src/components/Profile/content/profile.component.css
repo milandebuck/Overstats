@@ -153,6 +153,57 @@
         width: 100%;
         padding: 3%;
     }
+    .profile-header .profile-img{
+        width: 6rem;
+    }
+    .profile-img + h3{
+        font-size: 3rem;
+    }
+    .profile-rank {
+        padding-top: 1rem;
+        margin-left: 1.5rem;
+        display: inline-block;
+        width: 8rem;
+    }
+    .profile-rank  img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .profile-rank >img + span{
+        font-size: 2rem;
+
+    }
+    .profile-rank h3{
+        font-size: 1rem;
+    }
+
+    .profile-level{
+        font-size: 2rem;
+        padding-right: 1rem;
+        width: auto;
+    }
+    .profile-level h3{
+        font-size: 2rem;
+    }
+
+    .profile-hero img{
+        width: 5rem;
+        height: auto;
+        float: left;
+    }
+    .profile-hero h4{
+        float: left;
+        font-size: 2rem;
+        text-align: left;
+        width: 40%;
+        padding-left: 20%;
+    }
+    .profile-hero span{
+        padding-top: 1rem;
+        font-size: 2rem;
+        padding-right: 2rem;
+    }
+
 
 }
 @media(max-width: 700px) {
