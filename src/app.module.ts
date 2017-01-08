@@ -9,7 +9,7 @@ import { InfiniteScrollModule } from 'angular2-infinite-scroll';
 import { routes } from './app.routes';
 import {
     AppComponent,
-    HomeComponent,
+    LadderComponent,
     LeaderboardComponent,
     SearchBarComponent,
     RankingComponent,
@@ -19,7 +19,8 @@ import {
     ParamInputComponent,
     ApiComponent,
     ApiexampleComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    LandingComponent
 } from "./components";
 import {
     CookieService,
@@ -38,7 +39,7 @@ import {
     bootstrap: [ AppComponent ],
     declarations: [
         AppComponent,
-        HomeComponent,
+        LadderComponent,
         LeaderboardComponent,
         SearchBarComponent,
         RankingComponent,
@@ -48,7 +49,8 @@ import {
         ParamInputComponent,
         ApiComponent,
         ApiexampleComponent,
-        PortfolioComponent
+        PortfolioComponent,
+        LandingComponent
     ],
     imports: [
         BrowserModule,

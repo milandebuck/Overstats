@@ -9,18 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var HomeComponent = (function () {
-    function HomeComponent() {
+var LandingComponent = (function () {
+    function LandingComponent() {
     }
-    HomeComponent = __decorate([
+    LandingComponent = __decorate([
         core_1.Component({
-            selector: 'home',
-            template: require('./content/home.component.html'),
-            styles: [require('./content/home.component.css')]
+            selector: 'app',
+            template: require('./content/landing.component.html'),
+            styles: [require('./content/landing.component.css')]
         }), 
         __metadata('design:paramtypes', [])
-    ], HomeComponent);
-    return HomeComponent;
+    ], LandingComponent);
+    return LandingComponent;
 }());
-exports.HomeComponent = HomeComponent;
-//# sourceMappingURL=home.component.js.map
+exports.LandingComponent = LandingComponent;
+//# sourceMappingURL=landing.component.js.map

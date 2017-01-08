@@ -10,7 +10,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var http_1 = require('@angular/http');
-var Observable_1 = require('rxjs/Observable');
 var ExtractService = (function () {
     function ExtractService() {
     }
@@ -30,7 +29,7 @@ var ExtractService = (function () {
             errMsg = error.message ? error.message : error.toString();
         }
         console.error(errMsg);
-        return Observable_1.Observable.throw(errMsg);
+        return [];
     };
     ExtractService = __decorate([
         core_1.Injectable(), 

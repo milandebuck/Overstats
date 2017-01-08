@@ -4,10 +4,10 @@ import { Router } from '@angular/router';
 
 @Component({
     selector: 'home',
-    template: require('./content/home.component.html'),
-    styles: [ require('./content/home.component.css') ]
+    template: require('./content/ladder.component.html'),
+    styles: [ require('./content/ladder.component.css') ]
 })
-export class HomeComponent{
+export class LadderComponent{
 
     constructor(){}
 

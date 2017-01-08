@@ -23,7 +23,10 @@ var AppComponent = (function () {
     AppComponent.prototype.ngOnInit = function () {
         var _this = this;
         if (!this.cs.getCookie('x-access-token')) {
-            this.api.post(this.apiurl + '/Authenticate', { username: 'overstats', password: 'Azerty123' }).subscribe(function (res) { return _this.cs.setCookie(res.json().token); });
+            this.api.post(this.apiurl + '/Authenticate', { username: 'overstats', password: 'Azerty123' }).subscribe(function (res) {
+                _this.cs.setCookie(res.json().token);
+                _this.router.navigate([""]);
+            });
         }
     };
     AppComponent = __decorate([

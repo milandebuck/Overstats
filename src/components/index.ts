@@ -1,6 +1,6 @@
 export * from './App/app.component';
 export * from './loading-indicator';
-export * from './Home/home.component';
+export * from './Ladder/ladder.component';
 export * from './Leaderboard/leaderboard.component';
 export * from './SearchBar/searchbar.component';
 export * from './Ranking/ranking.component';
@@ -10,3 +10,4 @@ export * from './Param-input/param-input.component'
 export * from './Api/api.component';
 export * from './Apiexample/api-example.component';
 export * from './Portfolio/portfolio.component';
+export * from './Landing/landing.component';

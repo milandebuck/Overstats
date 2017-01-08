@@ -26,7 +26,7 @@ export class ExtractService {
             errMsg = error.message ? error.message : error.toString();
         }
         console.error(errMsg);
-        return Observable.throw(errMsg);
+        return [];
     }
 
 }

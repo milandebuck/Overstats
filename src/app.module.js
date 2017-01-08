@@ -27,7 +27,7 @@ var AppModule = (function () {
             bootstrap: [components_1.AppComponent],
             declarations: [
                 components_1.AppComponent,
-                components_1.HomeComponent,
+                components_1.LadderComponent,
                 components_1.LeaderboardComponent,
                 components_1.SearchBarComponent,
                 components_1.RankingComponent,
@@ -37,7 +37,8 @@ var AppModule = (function () {
                 components_1.ParamInputComponent,
                 components_1.ApiComponent,
                 components_1.ApiexampleComponent,
-                components_1.PortfolioComponent
+                components_1.PortfolioComponent,
+                components_1.LandingComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,

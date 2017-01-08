@@ -4,7 +4,7 @@ function __export(m) {
 }
 __export(require('./App/app.component'));
 __export(require('./loading-indicator'));
-__export(require('./Home/home.component'));
+__export(require('./Ladder/ladder.component'));
 __export(require('./Leaderboard/leaderboard.component'));
 __export(require('./SearchBar/searchbar.component'));
 __export(require('./Ranking/ranking.component'));
@@ -14,4 +14,5 @@ __export(require('./Param-input/param-input.component'));
 __export(require('./Api/api.component'));
 __export(require('./Apiexample/api-example.component'));
 __export(require('./Portfolio/portfolio.component'));
+__export(require('./Landing/landing.component'));
 //# sourceMappingURL=index.js.map
