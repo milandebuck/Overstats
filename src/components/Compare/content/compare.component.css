@@ -86,6 +86,14 @@ searchbar{
 @media(max-width: 960px) {
     .wrapper-compare{
         width: 100%;
+        margin-top: -10rem;
+
+    }
+    .wrapper-compare h2{
+        font-size: 5rem;
+    }
+    .msg{
+        font-size: 3rem;    
     }
 }
 @media(max-width: 700px)  {
@@ -94,7 +102,7 @@ searchbar{
         padding-left: 0;
         width: 100%;
     }
-    .compare-bloc{
+    .compare-block{
         width: 50%;
 
     }

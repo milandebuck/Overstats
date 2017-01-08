@@ -12,7 +12,11 @@
 }
 
 @media(max-width: 960px){
+    .wrapper-home h2{
+        font-size: 5rem;
+    }
     .wrapper-home{
+        margin-top: -10rem;
         width: 100%;
         padding: 3%;
     }

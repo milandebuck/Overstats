@@ -37,3 +37,9 @@
     font-weight: bold;
 
 }
+@media(max-width: 96rem)  {
+    .wrapper-portfolio{
+        width: 100%;
+        padding: 3%;
+    }
+}

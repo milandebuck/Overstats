@@ -1,8 +1,9 @@
 .wrapper-searchbar{
     width: 100%;
     z-index: 200;
+
     position: relative;
-    overflow: hidden;
+    max-height:2rem;
 }
 .wrapper-search{
     background-color:#c9c9c9;
@@ -30,7 +31,6 @@
     position: relative;
     margin: 0 auto;
     width: 100%;
-    overflow: hidden;
     z-index: 2000;
     background-color: white;
 }
