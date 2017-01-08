@@ -16,7 +16,6 @@ body{
 	background-color: #eee;
 }
 * {
-	z-index: 0;
 	margin: 0;
 	padding: 0; 
 	-webkit-box-sizing: border-box; 

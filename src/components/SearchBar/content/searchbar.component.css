@@ -1,6 +1,7 @@
 .wrapper-searchbar{
     width: 100%;
-    z-index: 0;
+    z-index: 200;
+    position: relative;
     overflow: hidden;
 }
 .wrapper-search{
@@ -26,10 +27,11 @@
     color: #222222;
 }
 .results{
+    position: relative;
     margin: 0 auto;
     width: 100%;
     overflow: hidden;
-    z-index: 200;
+    z-index: 2000;
     background-color: white;
 }
 .results li +li{
@@ -48,4 +50,7 @@
 .searchbar-player img{
     width: 4rem;
     height: 4rem;
+}
+.load-icon{
+    color: white;
 }

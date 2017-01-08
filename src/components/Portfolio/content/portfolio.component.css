@@ -8,7 +8,7 @@
     font-size: 10rem;
     margin-bottom: 5rem;
 }
-.bloc{
+.block{
     width: 100%;
     padding: 5%;
     border: 1px solid #c7c7c7;
@@ -18,21 +18,21 @@
     margin-top: 1rem;
 }
 
-.bloc h3,h4{
+.block h3,h4{
     text-align: left;
 
 }
-.bloc h3{
+.block h3{
     font-size: 5rem;
     width: 50%;
     border-bottom: 2px solid #ffc70e;
 }
-.bloc h4 {
+.block h4 {
     font-size: 2.5rem;
     width: 50%;
     border-bottom: 1px solid #c7c7c7;
 }
-.bloc h5{
+.block h5{
     font-size: 2rem;
     font-weight: bold;
 

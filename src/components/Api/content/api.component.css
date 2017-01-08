@@ -7,7 +7,7 @@
     font-size: 10rem;
     margin-bottom: 5rem;
 }
-.documentation-bloc{
+.documentation-block{
     margin-bottom: 3rem;
     border: 1px solid #c7c7c7;
     background-color: white;
@@ -16,10 +16,10 @@
     padding: 1rem;
     padding-left: 2rem;
 }
-.documentation-bloc > h3{
+.documentation-block > h3{
     font-size: 5rem;
 }
-.documentation-bloc .result{
+.documentation-block .result{
     width: 100%;
     text-align: center;
     font-size: 3rem;

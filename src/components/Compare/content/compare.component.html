@@ -1,7 +1,7 @@
 <div class="wrapper-compare">
     <h2>Compare Players</h2>
     <div class="wrapper-compare-search clearfix">
-        <div class="compare-bloc">
+        <div class="compare-block">
             <h3>Player1</h3>
             <searchbar [redirect]="false" (usersearch)="searchhero1($event)"></searchbar>
             <div class="wrapper-compare-user" *ngIf="hero1">
@@ -9,7 +9,7 @@
                 <h4>{{hero1.username}}</h4>
             </div>
         </div>
-        <div class="compare-bloc">
+        <div class="compare-block">
             <h3>Player2</h3>
             <searchbar [redirect]="false" (usersearch)="searchhero2($event)"></searchbar>
             <div  class="wrapper-compare-user" *ngIf="hero2">

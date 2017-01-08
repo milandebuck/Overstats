@@ -2,7 +2,7 @@
     <h2>Api Documentation</h2>
     <div class="wrapper-documentation">
         <ul>
-            <li class="documentation-bloc">
+            <li class="documentation-block">
                 <h3>Register for an Api account</h3>
                 <form (submit)="onSubmit()" [formGroup]="register">
                     <div *ngFor="let input of registerInput" class="form-row" >
@@ -16,7 +16,7 @@
                     {{msg}}
                 </div>
             </li>
-            <li class="documentation-bloc" *ngFor="let route of routes">
+            <li class="documentation-block" *ngFor="let route of routes">
                 <api-example [apimodel]="route" [apiurl]="api"></api-example>
             </li>
         </ul>
