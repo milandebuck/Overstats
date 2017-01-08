@@ -18,9 +18,11 @@
     padding-left: 1.5rem;
 }
 .wrapper-search > span{
-    width: 8%;
+    z-index: 200;
     text-align: right;
-    padding-right: 0.5rem;
+    float: right;
+    padding: 1%;
+    padding-top: 1rem;
     color: #222222;
 }
 .results{

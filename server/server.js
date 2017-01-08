@@ -9,9 +9,10 @@ var app = express();
  *	program specific requires
  ==============================*/
 //set port
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 7070;
 
- app.use(express.static(path.join(__dirname,'./../dist')));
+app.use(express.static(path.join(__dirname,'./../dist')));
+
 app.listen(port);
-console.log('backend API listening at' + port);
+console.log('Server  listening at ' + port);
 

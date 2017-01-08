@@ -20,6 +20,9 @@ var PlayerService = (function () {
         this.apiUrl = "https://api-overstats.herokuapp.com/Api";
     }
     PlayerService.prototype.getTop = function (start, end) {
+        //fix at the end of the playerbase
+        if (start > 3180 || end > 3206)
+            return null;
         var headers = new http_1.Headers();
         headers.append('Content-Type', 'application/json');
         headers.append('x-access-token', this.cs.getCookie('x-access-token'));
