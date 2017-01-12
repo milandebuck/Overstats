@@ -1,6 +1,6 @@
 # Projecten2 Milan De Buck - Overstats
 ### Description
-Application simulating a statistics site  for an FPS game made for the course Projecten 2
+Application simulating a statistics site  for an FPS game made for the course Projecten 2 Made with Angular2 & Webpack
 
 ### installation
  
