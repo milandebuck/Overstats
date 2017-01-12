@@ -2,7 +2,7 @@
 ### Description
 Application simulating a statistics site  for an FPS game made for the course Projecten 2 Made with Angular2 & Webpack
 
-### installation
+### Installation
  
 make sure you have ` npm ` installed
 
@@ -33,7 +33,7 @@ $ npm run build
 $ npm start
 ```
 
-###live version
+###Live version
 The [live version](https://overstats-angular2.herokuapp.com/ "Overstats") of this project can be found on Heroku
 
 
