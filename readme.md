@@ -1,11 +1,9 @@
 # Projecten2 Milan De Buck - Overstats
 ### Description
-Overstats application
+Application simulating a statistics site  for an FPS game made for the course Projecten 2
 
-### how to use
+### installation
  
-#### Angular frontend
-
 make sure you have ` npm ` installed
 
 install dependencies
@@ -25,6 +23,8 @@ $ npm run dev
 ```
 Application can be found on localhost:3000
 
+
+
 To run the production build
 
 
@@ -33,6 +33,8 @@ $ npm run build
 $ npm start
 ```
 
+###live version
+The [live version](https://overstats-angular2.herokuapp.com/ "Overstats") of this project can be found on Heroku
 
 
 ### Collaborators
